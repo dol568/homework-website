@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    color: #e2e3e7;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+}
+
+header,
+main,
+footer {
+    flex-shrink: 0;
+}
+
+nav {
+    background-color: #292c31;
+    padding: 10px;
+    flex: 1;
+    border-right: 1px solid #696e79;
+    color: #e2e3e7;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    border: none;
+    padding: 20px 32px;
+    margin: 5px;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.25;
+}
+
+nav li:hover {
+    color: #e88b88;
+    cursor: pointer;
+}
+
+article {
+    background-color: #232529;
+    padding: 20px;
+    margin: 0;
+    flex: 3;
+}
+
+.wrapper-all {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+footer {
+    background-color: #232529;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #696e79;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    nav {
+        z-index: 2;
+        -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+iframe {
+    display: block;
+    border-style: none;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.hero-image {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.hero-text {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transition: ease all .5s;
+}
+
+.btn {
+    border: 1px solid white;
+    color: white;
+    min-width: 100px;
+    min-height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+}
+
+#stronaglowna a:link,
+a:visited {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover,
+#stronaglowna a:hover,
+a:active {
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+}
+
+.login-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.signup-btn {
+    position: absolute;
+    right: 116px;
+    top: 8px;
+    transition: ease all .5s;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.button-form {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-form {
+    color: black;
+    padding-top: 10px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.psw>a {
+    color: #0083E5;
+}
+
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+span.psw {
+    float: right;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero-text {
+        font-size: 28px;
+        text-align: left;
+        left: 40%;
+
+    }
+
+    .signup-btn {
+        position: absolute;
+        right: 8px;
+        top: 56px;
+    }
+}
+
+hr {
+    border: 1px solid #696e79;
+    margin-bottom: 25px;
+}
+
+.container-result {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.score {
+    display: flex;
+    padding: 8px 0;
+}
+
+.score-half {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
+    color: #868d9a;
+}
+
+.team-left,
+.team-right {
+    font-size: 1.1em;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    min-width: -webkit-min-content;
+}
+
+.team-right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.date-left,
+.type-right {
+    font-size: 0.9em;
+    color: #868d9a;
+}
+
+.type-right {
+    text-align: right;
+}
+
+.match-wrapper {
+    padding: 0 80px;
+}
+
+.match-wrapper>p {
+    color: #0083E5;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0 10px 0;
+}
+
+.match-wrapper>hr {
+    margin-bottom: 10px;
+    border: 0.5px solid #696e79;
+    opacity: 0.3;
+}
+
+.score-center {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+/* The Modal (background) */
+.modal-images {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content-images {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content-images,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close-images {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-images:hover,
+.close-images:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content-images {
+        width: 100%;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-page {
+    padding: 0;
+}
+
+.gallery-auto-fit {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery-item {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.gallery-img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.5);
+}
+
+.gallery-link-img {
+    font-size: 23px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
