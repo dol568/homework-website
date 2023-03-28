@@ -65,6 +65,14 @@
                     <label for="psw-repeat"><b>Repeat Password</b></label>
                     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
+                    <label for="country"><b>Country</b></label>
+                    <select id="country" name="country">
+                        <option value="polska">Polska</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
                     <label>
                         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                     </label>
@@ -104,12 +112,11 @@
             <article>
 
                 <div id="stronaglowna" class="main">
-                    <h1 style="font-size: 2em; margin: 0">NEWS</h1>
-                    <p style="color: #0083E5; font-weight: bold; font-size: 2em; margin: 10px 0;">
+                    <h1>NEWS</h1>
+                    <p id="ig-title">
                         Bayern “well equipped for all competitions”</p>
-                    <span style="font-size: 1.1em; font-weight: bold;">A team win over
-                        Augsburg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span style="font-size: 1.1em; color: #868d9a;">Sat, 11/03/23, 20:30 CET</span>
+                    <span id="ig-title2">A team win over Augsburg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span id="ig-title3">Sat, 11/03/23, 20:30 CET</span>
                     <p>Just three days after an energy-sapping Champions League clash with Paris Saint-Germain and
                         progress
                         to the quarter-finals, Bayern faced another big game against fellow Bavarians Augsburg on
@@ -124,11 +131,10 @@
                     <br><br>
                     <hr>
 
-                    <p style="color: #0083E5; font-weight: bolder; font-size: 2em; margin: 10px 0;">
+                    <p id="ig-title">
                         FC Bayern Women go top overnight with win over Duisburg</p>
-                    <span style="font-size: 1.1em; font-weight: bold;">4-0 at the
-                        Campus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span style="font-size: 1.1em; color: #868d9a;">Sat, 11/03/23, 20:30 CET</span>
+                    <span id="ig-title2">4-0 at the Campus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span id="ig-title3">Sat, 11/03/23, 20:30 CET</span>
                     <p>FC Bayern Women went top of the FLYERALARM Bundesliga table with a commanding 4-0 win at home to
                         Duisburg on Friday evening. Sydney Lohmann got things going on 19 minutes at the FC Bayern
                         Campus,
@@ -140,7 +146,7 @@
                 </div>
 
                 <div id="matchplan" class="main">
-                    <h1 style="font-size: 2em; margin: 0">MATCHPLAN SEASON 2022/2023</h1>
+                    <h1>MATCHPLAN SEASON 2022/2023</h1>
                     <div class="match-wrapper">
                         <p>January</p>
                         <hr>
@@ -198,195 +204,164 @@
                             <div class="score-half">(0:0)</div>
                         </div>
                         <hr>
-                        <div class="score-half" style="padding: 30px 0"><span style="color: #868d9a">No matches
-                                scheduled</span></div>
+                        <div class="score-half bt"><span>No matches scheduled</span></div>
                         <hr>
                     </div>
                 </div>
 
                 <div id="videos" class="main">
-                    <h1 style="font-size: 2em; margin: 0; text-align: center; padding: 10px 0 30px 0;">VIDEOS
-                    </h1>
+                    <h1>VIDEOS</h1>
                     <div class="gallery-page">
                         <div class="gallery-auto-fit">
                             <div class="gallery-item">
-
                                 <a href="https://www.youtube.com/watch?v=W89ZU_WJ7Pg" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/thumb1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb1.jpg" alt="Alphonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="gallery-item">
-
-
-
                                 <a href="https://www.youtube.com/watch?v=DMRGh87rtTw" class="glightbox2"
-                                    style="position: relative;">
-
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
                                     <img class="gallery-img" src="img/thumb2.jpg" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
-
-
-
                             </div>
                             <div class="gallery-item">
-
-
                                 <a href="https://www.youtube.com/watch?v=VP4GtrEsefk" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb3.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
-
-
-
                             </div>
                             <div class="gallery-item" style="display: flex; justify-content: center;">
-
-
                                 <a href="https://www.youtube.com/watch?v=ZIUaL16C6VM" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb4.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="gallery-item">
-
-
                                 <a href="https://www.youtube.com/watch?v=E_JioLDrN68" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb5.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="gallery-item">
-
-
                                 <a href="https://www.youtube.com/watch?v=giTdF5j_7T0" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb6.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="gallery-item">
-
-
                                 <a href="https://www.youtube.com/watch?v=vAETp76H1Jk" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb7.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="gallery-item">
-
-
                                 <a href="https://www.youtube.com/watch?v=pnXPVjDmucU" class="glightbox2"
-                                    style="position: relative;">
-                                    <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
+                                    style="position: relative;" data-glightbox="title: Offentliches training;">
+                                    <img class="gallery-img" src="img/thumb8.png" alt="Alfonso Davies">
                                     <div class="gallery-link-img">
                                         <span>Play Video</span>
                                     </div>
                                 </a>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
 
                 <div id="photos" class="main">
-                    <h1 style="font-size: 2em; margin: 0; text-align: center; padding: 10px 0 30px 0;">PHOTOS
-                    </h1>
+                    <h1>PHOTOS</h1>
                     <div class="gallery-page">
                         <div class="gallery-auto-fit">
                             <div class="gallery-item">
-                                <a href="img/img1.jpg" class="glightbox">
+                                <a href="img/img1.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img1.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img2.jpg" class="glightbox">
+                                <a href="img/img2.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img2.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img3.jpg" class="glightbox">
+                                <a href="img/img3.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img3.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img4.jpg" class="glightbox">
+                                <a href="img/img4.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img4.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img5.jpg" class="glightbox">
+                                <a href="img/img5.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img5.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img6.jpg" class="glightbox">
+                                <a href="img/img6.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img6.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img7.jpg" class="glightbox">
+                                <a href="img/img7.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img7.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img8.jpg" class="glightbox">
+                                <a href="img/img8.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img8.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img9.jpg" class="glightbox">
+                                <a href="img/img9.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img9.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img10.jpg" class="glightbox">
+                                <a href="img/img10.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img10.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img11.jpg" class="glightbox">
+                                <a href="img/img11.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img11.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                             <div class="gallery-item">
-                                <a href="img/img12.jpg" class="glightbox">
+                                <a href="img/img12.jpg" class="glightbox" data-glightbox="title: Alphonso Davies;">
                                     <img class="gallery-img" src="img/img12.jpg" alt="Alfonso Davies">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </article>
         </section>
 
         <footer>
-            <p style="font-size: 1.1rem"><span style="font-size: 1em;">©
-                    2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="Data"></span><br>
+            <p><span id="year-footer">©2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="Data"></span><br>
             </p>
         </footer>
     </div>

@@ -18,6 +18,13 @@ body {
 
 h1 {
     font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+
+#videos,
+#photos h1 {
+    padding-bottom: 20px;
 }
 
 section {
@@ -79,6 +86,31 @@ footer {
     border-top: 3px solid #696e79;
 }
 
+footer p {
+    font-size: 1.1rem;
+}
+
+#year-footer {
+    font-size: 1em;
+}
+
+#ig-title {
+    color: #0083E5;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#ig-title2 {
+    font-size: 1.05em;
+    font-weight: bolder;
+}
+
+#ig-title3 {
+    font-size: 1.05em;
+    color: #868d9a;
+}
+
 @media (max-width: 600px) {
     section {
         flex-direction: column;
@@ -92,14 +124,6 @@ footer {
     }
 
 }
-
-iframe {
-    display: block;
-    border-style: none;
-    margin: auto;
-    padding: 10px;
-}
-
 
 .hero-image {
     background-color: rgba(0, 0, 0, 0.7);
@@ -170,7 +194,8 @@ a:active {
 }
 
 input[type=text],
-input[type=password] {
+input[type=password],
+select {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -180,7 +205,8 @@ input[type=password] {
 }
 
 input[type=text]:focus,
-input[type=password]:focus {
+input[type=password]:focus,
+select:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -309,7 +335,6 @@ span.psw {
     float: right;
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
         display: block;
@@ -365,7 +390,14 @@ hr {
     margin-bottom: 5px;
     justify-content: center;
     color: #868d9a;
+    padding: 10px 0;
 }
+
+.bt {
+    padding: 30px 0;
+}
+
+
 
 .team-left,
 .team-right {
@@ -413,104 +445,6 @@ hr {
     font-weight: bold;
 }
 
-/* The Modal (background) */
-.modal-images {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content-images {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content-images,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-/* The Close Button */
-.close-images {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close-images:hover,
-.close-images:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content-images {
-        width: 100%;
-    }
-}
-
 img {
     width: 100%;
     height: auto;
@@ -533,7 +467,6 @@ img {
     width: 100%;
     overflow: hidden;
 }
-
 
 .gallery-img {
     height: 100%;
