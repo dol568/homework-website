@@ -468,6 +468,10 @@ img {
     overflow: hidden;
 }
 
+.gallery-item > a {
+    position: relative;
+}
+
 .gallery-img {
     height: 100%;
     object-fit: cover;
